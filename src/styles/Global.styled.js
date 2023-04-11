@@ -1,11 +1,17 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
   body {
     margin: 0;
     padding: 0;
     color: ${props => (props.darkMode ? 'white' : 'black')};
+    font-family: 'Comfortaa', cursive;
   }
+  
+  
+
 
   ::placeholder{
     font-size:12px;
@@ -14,14 +20,13 @@ export default createGlobalStyle`
 
 export const Container=styled.div`
  max-width:1980px;
- min-height:100vh;
-  margin: 0 auto;;
+ margin: 0 auto;
 
 `
 
 export const Row =styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;`
 
